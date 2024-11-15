@@ -3,7 +3,20 @@
 :root {
 	--nav-button-top-bottom-padding: 6px;
 	--nav-button-right-left-padding: 6px;
+	--primary-color: #000000;
+	--secondary-color: #222222;
+	--font-color: #0fffff;
+	--font-color-link: blue;
+	--border-color: #0fffff;
+	--button-primary: #353535;
+	--button-hover: #444444;
+	--button-active: #203020;
+	--button-active-hover: #306030;
+	--button-inactive: #452020;
+	--button-inactive-hover: #753030;
 }
+
+a:visited { text-decoration: none; color: var(--font-color); }
 
 .font__source-code-pro {
 	font-family: "Source Code Pro", monospace;
@@ -26,8 +39,8 @@
 
 .nav__div {
 	display: inline-block;
-	background-color: #222222;
-	color: white;
+	background-color: var(--secondary-color);
+	color: var(--font-color);
 	width: 100%;
 	margin: 0px 0px;
 	padding: 0px 0px;
@@ -52,34 +65,60 @@
 
 .nav__button {
 	text-align: center;
-	background-color: #353535;	
+	background-color: var(--button-primary);	
 	margin: 0px 1px;
 	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+	text-decoration: none;
+	color: var(--font-color);
 }
 
 .nav__button--active {	
 	text-align: center;
-	background-color: #205020;
+	background-color: var(--button-active);
 	margin: 0px 1px;
 	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+	text-decoration: none;
+	color: var(--font-color);
 }
 
 .nav__button--active:hover {
 	text-align: center;
-	background-color: #306030;
+	background-color: var(--button-active-hover);
 	margin: 0px 1px;
 	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+	text-decoration: none;
+	color: var(--font-color);
+}
+
+.nav__button--inactive {	
+	text-align: center;
+	background-color: var(--button-inactive);
+	margin: 0px 1px;
+	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+	text-decoration: none;
+	color: var(--font-color);
+}
+
+.nav__button--inactive:hover {
+	text-align: center;
+	background-color: var(--button-inactive-hover);
+	margin: 0px 1px;
+	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+	text-decoration: none;
+	color: var(--font-color);
 }
 
 .nav__button:hover {
 	text-align: center;
-	background-color: #444444;
+	background-color: var(--button-hover);
 	margin: 0px 1px;
 	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+	text-decoration: none;
+	color: var(--font-color);
 }
 
 .main__body {
-	background-color: #000000;
+	background-color: var(--primary-color);
 	margin: 0px 0px;
 	padding: 0px 0px;
 }
@@ -90,8 +129,8 @@
 	padding: 0px 0px;
 	padding-bottom: 50px;
 	border-bottom: 2px solid;
-	border-color: white;
-	color: white
+	border-color: var(--border-color);
+	color: var(--font-color);
 }
 
 .main__div--donate {
@@ -99,22 +138,22 @@
 	margin: 0px auto;
 	padding: 0px 0px;
 	border-bottom: 2px solid;
-	border-color: white;
-	color: white
+	border-color: var(--border-color);
+	color: var(--font-color);
 }
 
 .main__paragraph {
 	margin: 0px 0px;
 	padding: 0px 0px;
-	color: white
+	color: var(--font-color);
 }
 
 .main__div--disaster {
 	border-top: 2px dashed;
-	border-color: white;
+	border-color: var(--border-color);
 	margin: 0px 0px;
 	padding: 2px 0px;
-	color: white;
+	color: var(--font-color);
 	text-align: center;
 }
 
@@ -124,9 +163,15 @@
    	bottom: 0;
    	width: 100%;
    	background-color: #222222;
-   	color: white;
+   	color: var(--font-color);
    	text-align: center;
 	font-size:11px;
+}
+
+.main__link {
+	color: var(--font-color-link);
+	font-decoration: underline;
+	text-decoration-color: var(--font-color-link);
 }
 
 .main__sub-title {
