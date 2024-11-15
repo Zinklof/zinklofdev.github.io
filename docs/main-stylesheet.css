@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+	--nav-button-top-bottom-padding: 6px;
+	--nav-button-right-left-padding: 6px;
+}
+
+.font__source-code-pro {
+	font-family: "Source Code Pro", monospace;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.nav__logo-image {
+	width: 237px;
+	height: 32px;
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+.nav__logo-paragraph {
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+
+.nav__div {
+	display: inline-block;
+	background-color: #222222;
+	color: white;
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+.nav__item--float-right {
+	display: inline-block;
+	float: right;
+	padding-right: 16px;
+}
+
+.nav__item--float-left {
+	display: inline-block;
+	float: left;
+	padding-left: 16px;
+}
+
+.nav__button-holder {
+	margin-right:25px;
+	padding: 8px 0px;
+}
+
+.nav__button {
+	text-align: center;
+	background-color: #353535;	
+	margin: 0px 1px;
+	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+}
+
+.nav__button--active {	
+	text-align: center;
+	background-color: #205020;
+	margin: 0px 1px;
+	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+}
+
+.nav__button--active:hover {
+	text-align: center;
+	background-color: #306030;
+	margin: 0px 1px;
+	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+}
+
+.nav__button:hover {
+	text-align: center;
+	background-color: #444444;
+	margin: 0px 1px;
+	padding: var(--nav-button-top-bottom-padding) var(--nav-button-right-left-padding);
+}
+
+.main__body {
+	background-color: #000000;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+.main__div {
+	width: 75%;
+	margin: 0px auto;
+	padding: 0px 0px;
+	padding-bottom: 50px;
+	border-bottom: 2px solid;
+	border-color: white;
+	color: white
+}
+
+.main__div--donate {
+	width: 75%;
+	margin: 0px auto;
+	padding: 0px 0px;
+	border-bottom: 2px solid;
+	border-color: white;
+	color: white
+}
+
+.main__paragraph {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	color: white
+}
+
+.main__div--disaster {
+	border-top: 2px dashed;
+	border-color: white;
+	margin: 0px 0px;
+	padding: 2px 0px;
+	color: white;
+	text-align: center;
+}
+
+.main__footer {
+  	 position: fixed;
+   	left: 0;
+   	bottom: 0;
+   	width: 100%;
+   	background-color: #222222;
+   	color: white;
+   	text-align: center;
+	font-size:11px;
+}
+
+.main__sub-title {
+	font-size:13px;
+}
+
+.main__div--spacer {
+	padding: 50px 50px;
+}
